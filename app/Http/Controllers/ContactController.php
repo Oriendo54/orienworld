@@ -26,7 +26,7 @@ class ContactController extends Controller
         }
 
         $username = htmlspecialchars($request->username);
-        $email = $request->email;
+        $email = htmlspecialchars($request->email);
         $content = htmlspecialchars($request->message);
 
         // Envoi du mail
