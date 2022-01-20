@@ -11,7 +11,7 @@ PROJET PERSONNEL : Site web "Les mondes d'Oriendo" et application "PonyOnFire"
 Remarque : Ce site internet est encore en cours de construction.
 Il s'agit de mon site web personnel, qui sera hébergé prochainement sur un VPS.
 D'autres fonctionnalités verront rapidement le jour par la suite, comme l'ajout de commentaires dans la section "Mes récits".
-Certains mini-jeux et projets du Portfolio sont encore à l'état de "Work In Project" : je continue actuellement de travailler dessus et les intégrerai au fur
+Certains mini-jeux et projets du Portfolio sont encore à l'état de "Work In Progress" : je continue actuellement de travailler dessus et les intégrerai au fur
 et à mesure de mon avancée lorsqu'ils seront testés et fonctionnels.
 L'essentiel de la structure du site et le layout CSS sont toutefois opérationnels, ce qui constitue une v1 utilisable.
 
