@@ -2,7 +2,6 @@
 
 namespace Database\Seeders;
 
-use Database\Seeders\PofSeeder;
 use Illuminate\Database\Seeder;
 use Database\Seeders\RomansSeeder;
 use Database\Seeders\PortfolioSeeder;
@@ -20,7 +19,6 @@ class DatabaseSeeder extends Seeder
             RomansSeeder::class,
             PortfolioSeeder::class,
             StarmapSeeder::class,
-            PofSeeder::class,
         ]);
     }
 }

@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Laravel'),
+    'name' => env('APP_NAME', 'Orienworld'),
 
     /*
     |--------------------------------------------------------------------------
@@ -179,9 +179,6 @@ return [
 
         // Service Provider DomPDF
         Barryvdh\DomPDF\ServiceProvider::class,
-
-        // Service Provider POF
-        App\Providers\POFServiceProvider::class,
     ],
 
     /*
@@ -236,12 +233,6 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
         // Façade DomPDF
         "PDF" => Barryvdh\DomPDF\Facade::class,
-
-        // Façade POF
-        'POFCours' => App\Helpers\POF\CoursHelper::class,
-        'POFFacture' => App\Helpers\POF\FactureHelper::class,
-        'POFDate' => App\Helpers\POF\DateHelper::class,
-        'POFStats' => App\Helpers\POF\StatsHelper::class,
     ],
 
 ];

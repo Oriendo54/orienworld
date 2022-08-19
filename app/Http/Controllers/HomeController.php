@@ -1,6 +1,6 @@
 <?php
 
-namespace app\Http\Controllers;
+namespace App\Http\Controllers;
 
 use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\Controller;
@@ -14,5 +14,9 @@ class HomeController extends Controller {
 
     public function about() {
         return view('about');
+    }
+
+    public function aboutMe() {
+        return view('aboutMe');
     }
 }

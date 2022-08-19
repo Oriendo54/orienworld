@@ -10,11 +10,7 @@
 </div>
 
 <div class="{{$roman->alias.'-container'}}">
-	<i class="fas fa-arrow-circle-left novel-previous" onclick="goToPage({{$roman->id_roman}}, -1)"></i>
-	<section class="display-roman" id="{{ 'display-'.$roman->alias }}">
-		@include('orienworld.'.$roman->alias.'.'.$page)
-	</section>
-	<i class="fas fa-arrow-circle-right novel-next" onclick="goToPage({{$roman->id_roman}}, 1)"></i>
+    <iframe src="{{ asset('/documents/'.$roman->alias.'.pdf') }}" width="1100px" height="800px"></iframe>
 </div>
 
 <section class="novel-copyright">

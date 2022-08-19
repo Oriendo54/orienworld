@@ -30,6 +30,10 @@ class PortfolioController extends Controller {
         return view('games.pong');
     }
 
+    public function ponyOnFire() {
+        return view('projects.pof');
+    }
+
     public function snake() {
         // return $this->wip('portfolio');
         return view('games.snake');

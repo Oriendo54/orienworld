@@ -26,44 +26,5 @@ class AuthServiceProvider extends ServiceProvider
     {
         $this->registerPolicies();
 
-        Gate::define('admin', function(User $user) {
-            
-            if($user->pofuserrole->id_role === 1) {
-                return true;
-            }
-            else {
-                return false;
-            }
-        });
-
-        Gate::define('moniteur', function(User $user) {
-            
-            if($user->pofuserrole->id_role === 2) {
-                return true;
-            }
-            else {
-                return false;
-            }
-        });
-
-        Gate::define('client', function(User $user) {
-            
-            if($user->pofuserrole->id_role === 3) {
-                return true;
-            }
-            else {
-                return false;
-            }
-        });
-
-        Gate::define('back-access', function(User $user) {
-
-            if($user->pofuserrole->id_role != 1 && $user->pofuserrole->id_role != 2) {
-                return false;
-            }
-            else {
-                return true;
-            }
-        });
     }
 }

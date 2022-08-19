@@ -65,7 +65,16 @@ class Controller extends BaseController
 
     /* Gère la déconnexion des utilisateurs */
     public function logout(Request $request) {
+        $this->PofLog('déconnexion de '.auth()->user()->name);
         Auth::logout();
-        return redirect(route('portfolio'));
+
+        /* Suppression de la session et du token de sécurité pour que le prochain
+        utilisateur ne soit pas obligé de rentrer ses identifiants deux fois en se connectant */
+        $this->PofLog('suppression de la session et rafraîchissement du token de connexion');
+        $request->session()->invalidate();
+        $request->session()->regenerateToken();
+
+        $this->PofLog('Renvoi vers la page de connexion');
+        return redirect(route('login'));
     }
 }

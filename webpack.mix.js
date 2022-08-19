@@ -12,10 +12,18 @@ const mix = require('laravel-mix');
  */
 
 mix.js('resources/js/app.js', 'public/js')
+    .js('resources/js/about.js', 'public/js')
+    .js('resources/js/contact.js', 'public/js')
+    .js('resources/js/home.js', 'public/js')
+    .js('resources/js/orienworld.js', 'public/js')
+    .js('resources/js/portfolio.js', 'public/js')
+    .js('resources/js/sidebar.js', 'public/js')
     .postCss('resources/css/app.css', 'public/css', [
         require('postcss-import'),
         require('tailwindcss'),
-    ]);
+    ])
+    .postCss('resources/css/normalize.css', 'public/css')
+    .postCss('resources/css/style.css', 'public/css');
 
 if (mix.inProduction()) {
     mix.version();
